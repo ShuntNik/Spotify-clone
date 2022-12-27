@@ -77,3 +77,29 @@ nav ul li{
 #progressBar {
     width: 70vw;
 }
+
+.song-item {
+    height: 50px;
+    display: flex;
+    background-color: white;
+    width: 150%;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.song-item img {
+    width: 45px;
+    margin: 0 23px 0;
+    border-radius: 50%;
+}
+
+.timestamp {
+    margin: 0 25px;
+}
+
+.timestamp i {
+    cursor: pointer;
+}
