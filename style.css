@@ -41,3 +41,20 @@ nav ul li{
     font-weight: bolder;
     font-size: 25px;
 }
+
+.music-container {
+    min-height: 75vh;
+}
+
+.bottom-player {
+    position: sticky;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#progressBar {
+    width: 80vw;
+}
