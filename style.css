@@ -43,7 +43,16 @@ nav ul li{
 }
 
 .music-container {
-    min-height: 75vh;
+    min-height: 60.5vh;
+    background-color: black;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 70vw;
+    padding: 35px;
+    background-image: url(bg.jpg);
+    border-radius: 15px;
 }
 
 .bottom-player {
@@ -53,8 +62,18 @@ nav ul li{
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
+    flex-direction: column;
+}
+
+.icons {
+    margin-top: 15px;
+}
+
+.icons i{
+    cursor: pointer;
 }
 
 #progressBar {
-    width: 80vw;
+    width: 70vw;
 }
