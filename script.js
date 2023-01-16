@@ -8,12 +8,12 @@ let gif = document.getElementById('gif');
 
 let songs =[
     {songName: "House of Memories", filePath: "songs/1.mp3", coverPath: "covers/1.jpg"},
-    {songName: "House of Memories", filePath: "songs/1.mp3", coverPath: "covers/1.jpg"},
-    {songName: "House of Memories", filePath: "songs/1.mp3", coverPath: "covers/1.jpg"},
-    {songName: "House of Memories", filePath: "songs/1.mp3", coverPath: "covers/1.jpg"},
-    {songName: "House of Memories", filePath: "songs/1.mp3", coverPath: "covers/1.jpg"},
-    {songName: "House of Memories", filePath: "songs/1.mp3", coverPath: "covers/1.jpg"},
-    {songName: "House of Memories", filePath: "songs/1.mp3", coverPath: "covers/1.jpg"}
+    {songName: "Starboy", filePath: "songs/2.mp3", coverPath: "covers/2.jpg"},
+    {songName: "Rise", filePath: "songs/3.mp3", coverPath: "covers/3.jpg"},
+    {songName: "Light em up", filePath: "songs/4.mp3", coverPath: "covers/4.jpg"},
+    {songName: "Bad habbits", filePath: "songs/5.mp3", coverPath: "covers/5.jpg"},
+    {songName: "Teeth", filePath: "songs/6.mp3", coverPath: "covers/6.jpg"},
+    {songName: "Run BTS", filePath: "songs/7.mp3", coverPath: "covers/7.jpg"}
 ]
 
 //Hnadle p-lay pause click
