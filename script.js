@@ -1,5 +1,5 @@
 console.log("welcome to spotify");
-let songindex = 0;
+let songIndex = 0;
 let audioElement = new Audio('songs/1.mp3');
 let masterPlay = document.getElementById('masterPlay');
 let myProgressBar = document.getElementById('myProgressBar');
@@ -62,7 +62,43 @@ Array.from(document.getElementsByClassName("songItemPlay")).forEach((element)=>{
     element.addEventListener('click', (e)=>{
         console.log(e.target)
         makeAllPlays();
+        songIndex = parseInt(e.target.id);
         e.target.classList.remove("fa-circle-play");
         e.target.classList.add("fa-circle-pause");
+        audioElement.src = `songs/${songIndex}.mp3`;
+        audioElement.currentTime=0;
+        audioElement.play();
+        masterPlay.classList.remove('fa-circle-play');
+        masterPlay.classList.add('fa-circle-pause');
     })
+})
+
+document.getElementById("next").addEventListener('click',()=>{
+    if(songIndex>6){
+        songIndex=0;
+    }
+    else{
+        songIndex += 1;
+    }
+    audioElement.src = `songs/${songIndex}.mp3`;
+    audioElement.currentTime=0;
+    audioElement.play();
+    masterPlay.classList.remove('fa-circle-play');
+    masterPlay.classList.add('fa-circle-pause');
+    makeAllPlays();
+})
+
+document.getElementById("previous").addEventListener('click',()=>{
+    if(songIndex<1){
+        songIndex=7;
+    }
+    else{
+        songIndex -= 1;
+    }
+    audioElement.src = `songs/${songIndex}.mp3`;
+    audioElement.currentTime=0;
+    audioElement.play();
+    masterPlay.classList.remove('fa-circle-play');
+    masterPlay.classList.add('fa-circle-pause');
+    makeAllPlays();
 })
